@@ -1,3 +1,33 @@
 :host {
-  display: block;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "img name"
+    "img email"
+  ;
+  padding: 8px;
+
+  .picture-container {
+    grid-area: img;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .picture {
+      border-radius: 50%;
+      max-width: 100%;
+      max-height: 100%;
+      border: 1px solid black;
+    }
+  }
+
+  .name {
+    grid-area: name;
+  }
+
+  .email {
+    grid-area: email;
+  }
 }
