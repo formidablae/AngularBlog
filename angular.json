@@ -17,7 +17,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "dicf",
+      "prefix": "myblog",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",

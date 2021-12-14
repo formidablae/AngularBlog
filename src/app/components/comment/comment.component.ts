@@ -2,7 +2,7 @@ import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core
 import { IComment } from 'src/app/interfaces/comment';
 
 @Component({
-  selector: 'dicf-comment',
+  selector: 'myblog-comment',
   templateUrl: './comment.component.html',
   styleUrls: ['./comment.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
