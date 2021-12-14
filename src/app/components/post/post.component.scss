@@ -1,0 +1,63 @@
+:host {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "post-title-container"
+    "dates"
+    "text"
+    "comments";
+  ;
+  padding: 8px;
+
+  .post-header-container {
+    grid-area: post-title-container;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 0.67fr 0.33fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "post-title post-user"
+    ;
+
+    .post-title {
+      grid-area: post-title;
+      font-weight: bold;
+    }
+
+    .dicf-user {
+      grid-area: post-user;
+    }
+  }
+
+  .post-date {
+    grid-area: dates;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "created-at updated-at"
+    ;
+    color: gray;
+
+    .created-at {
+      grid-area: created-at;
+    }
+
+    .updated-at {
+      grid-area: updated-at;
+    }
+  }
+
+  .text {
+    grid-area: text;
+    text-align: justify;
+  }
+
+  .comments {
+    grid-area: comments;
+    color: gray;
+  }
+}

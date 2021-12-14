@@ -6,7 +6,7 @@ const DATA: IPost[] = [
   {
     id: 1,
     title: 'Post 1',
-    text: 'A cool post',
+    text: 'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit, sed do eiusmod tempor incididunt ut laboost',
     created_at: '2020-01-01',
     updated_at: '2020-01-02',
     comments_count: 0,
@@ -21,7 +21,7 @@ const DATA: IPost[] = [
   {
     id: 2,
     title: 'Post 2',
-    text: 'Another cool post',
+    text: 'Anog elit, sed do eiusmod tempor incididunt ut labother coog elit, sed do eiusmod tempor incididunt ut labol post',
     created_at: '2020-05-01',
     updated_at: '2020-06-07',
     comments_count: 0,

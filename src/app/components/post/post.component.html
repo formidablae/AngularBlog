@@ -1,0 +1,28 @@
+<div class="post-header-container">
+  <div class="post-title">
+      {{ post.title }}
+  </div>
+
+  <dicf-user
+    [fullName]="post.user.full_name"
+    [email]="post.user.email">
+  </dicf-user>
+</div>
+
+<div class="post-date">
+  <div class="created-at">
+    Created at: {{ post.created_at | formatDate }}
+  </div>
+
+  <div class="updated-at">
+    Last updated: {{ post.updated_at | formatDate }}
+  </div>
+</div>
+
+<div class="text">
+  {{ post.text }}
+</div>
+
+<div class="comments">
+  {{ post.comments_count }} comments
+</div>
