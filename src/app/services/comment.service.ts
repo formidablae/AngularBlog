@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { IComment } from '../interfaces/comment';
+import { CrudService } from './crud.service';
 
 const DATA: IComment[] = [
   {
@@ -36,9 +37,7 @@ const DATA: IComment[] = [
 @Injectable({
   providedIn: 'root'
 })
-export class CommentService {
-
-  constructor() { }
+export class CommentService extends CrudService<IComment> {
 
   getComments$(postId: number): Observable<IComment[]> {
     return of(DATA.filter(comment => comment.post_id === postId));

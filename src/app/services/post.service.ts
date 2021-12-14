@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { IPost } from '../interfaces/post';
+import { CrudService } from './crud.service';
 
 const DATA: IPost[] = [
   {
@@ -38,9 +39,7 @@ const DATA: IPost[] = [
 @Injectable({
   providedIn: 'root'
 })
-export class PostService {
-
-  constructor() { }
+export class PostService extends CrudService<IPost> {
 
   getPosts$(): Observable<IPost[]> {
     return of(DATA);
