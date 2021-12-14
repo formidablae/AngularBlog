@@ -34,7 +34,7 @@ export class AppComponent {
   comment: IComment = {
     id: 41,
     text:
-      'this is come' +
+      'this is a ' +
       'cool comment',
     created_at: '2021-11-21',
     updated_at: '2021-11-22',

@@ -1,3 +1,55 @@
 :host {
-  display: block;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "commented-on-post"
+    "user-comment"
+    "dates"
+  ;
+  padding: 8px;
+
+  .comment-on-post {
+    grid-area: commented-on-post;
+  }
+
+  .user-comment {
+    grid-area: user-comment;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 0.33fr 0.67fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "comment-user comment-text"
+    ;
+
+    .dicf-user {
+      grid-area: comment-user;
+    }
+
+    .text {
+      grid-area: comment-text;
+    }
+  }
+
+  .comment-date {
+    grid-area: dates;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "created-at updated-at"
+    ;
+    color: gray;
+
+    .created-at {
+      grid-area: created-at;
+    }
+
+    .updated-at {
+      grid-area: updated-at;
+    }
+  }
 }

@@ -1,11 +1,16 @@
-<div class="comment-header-container">
-  <div>
-    Commented in post number <a class="comment-on-post-title" href="">{{ comment.post_id }}</a>
-  </div>
+<div class="comment-on-post">
+  Commented on post number <a href="">{{ comment.post_id }}</a>
+</div>
+
+<div class="user-comment">
   <dicf-user
     [fullName]="comment.user.full_name"
     [email]="comment.user.email">
   </dicf-user>
+
+  <div class="text">
+    {{ comment.text }}
+  </div>
 </div>
 
 <div class="comment-date">
@@ -16,8 +21,4 @@
   <div class="updated-at">
     Last updated: {{ comment.updated_at | formatDate }}
   </div>
-</div>
-
-<div class="text">
-  {{ comment.text }}
 </div>
