@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IComment } from './interfaces/comment';
 import { IPost } from './interfaces/post';
 
 @Component({
@@ -21,7 +22,23 @@ export class AppComponent {
       'lit, sed do eiusmod tempor incididunt ut labo',
     created_at: '2020-01-01',
     updated_at: '2020-01-02',
-    comments_count: 0,
+    comments_count: 1,
+    user: {
+      id: 10,
+      first_name: 'User',
+      last_name: 'Suruser',
+      email: 'us1@mail.com',
+      full_name: 'User Suruser'
+    },
+  };
+  comment: IComment = {
+    id: 41,
+    text:
+      'this is come' +
+      'cool comment',
+    created_at: '2021-11-21',
+    updated_at: '2021-11-22',
+    post_id: 1,
     user: {
       id: 10,
       first_name: 'User',

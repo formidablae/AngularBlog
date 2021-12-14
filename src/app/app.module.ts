@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
 import { PostComponent } from './components/post/post.component';
 import { FormatDatePipe } from './pipes/formatDate.pipe';
+import { CommentComponent } from './components/comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { FormatDatePipe } from './pipes/formatDate.pipe';
     UserComponent,
     PostComponent,
     FormatDatePipe,
+    CommentComponent,
   ],
   imports: [
     BrowserModule,

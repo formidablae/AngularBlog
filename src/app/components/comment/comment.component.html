@@ -1,0 +1,23 @@
+<div class="comment-header-container">
+  <div>
+    Commented in post number <a class="comment-on-post-title" href="">{{ comment.post_id }}</a>
+  </div>
+  <dicf-user
+    [fullName]="comment.user.full_name"
+    [email]="comment.user.email">
+  </dicf-user>
+</div>
+
+<div class="comment-date">
+  <div class="created-at">
+    Created at: {{ comment.created_at | formatDate }}
+  </div>
+
+  <div class="updated-at">
+    Last updated: {{ comment.updated_at | formatDate }}
+  </div>
+</div>
+
+<div class="text">
+  {{ comment.text }}
+</div>
