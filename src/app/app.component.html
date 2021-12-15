@@ -1,10 +1,22 @@
-<ng-container *ngFor="let p of (posts$ | async)">
-    <myblog-post
-        [post]="p"
-        [summary]="true"
-        (commentsClicked)="commentsClicked($event)">
-    </myblog-post>
-</ng-container>
-<div>
-    Sono presenti {{ numberOfArticles$ | async }} articoli di {{ numberOfUsers$ | async }} utenti.
+<div class="leftSide">
+    <ng-container *ngFor="let u of (users$ | async)">
+          <myblog-user
+            [fullName]="u.full_name"
+            [email]="u.email"
+            [picture]="u.picture">
+          </myblog-user>
+    </ng-container>
+</div>
+
+<div class="rightSide">
+    <ng-container *ngFor="let p of (posts$ | async)">
+        <myblog-post
+            [post]="p"
+            [summary]="true"
+            (commentsClicked)="commentsClicked($event)">
+        </myblog-post>
+    </ng-container>
+    <div>
+        Sono presenti {{ numberOfArticles$ | async }} articoli di {{ numberOfUsers$ | async }} utenti.
+    </div>
 </div>

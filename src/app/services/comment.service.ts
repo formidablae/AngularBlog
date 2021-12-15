@@ -15,7 +15,8 @@ const DATA: IComment[] = [
       first_name: 'User',
       last_name: 'Suruser',
       email: 'us1@mail.com',
-      full_name: 'User Suruser'
+      full_name: 'User Suruser',
+      picture: 'https://i.pravatar.cc/300?t=4',
     },
   },
   {
@@ -29,7 +30,8 @@ const DATA: IComment[] = [
       first_name: 'Fan',
       last_name: 'Surfan',
       email: 'fs11@mail.com',
-      full_name: 'Fan Surfan'
+      full_name: 'Fan Surfan',
+      picture: 'https://i.pravatar.cc/300?t=5',
     },
   },
 ]
