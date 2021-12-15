@@ -10,7 +10,7 @@ const DATA = [
       last_name: 'Doe',
       full_name: 'John Doe',
       email: 'jd@mail.com',
-      picture: 'https://i.pravatar.cc/300?t=1',
+      picture: 'https://i.pravatar.cc/300?t=2',
   }
 ];
 

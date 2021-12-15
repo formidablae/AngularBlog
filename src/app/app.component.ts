@@ -6,7 +6,7 @@ import { IPost } from './interfaces/post';
 import { IUser } from './interfaces/user';
 
 @Component({
-  selector: 'app-root',
+  selector: 'myblog-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
