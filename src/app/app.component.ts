@@ -37,6 +37,6 @@ export class AppComponent {
   }
 
   userClicked(userId: number): void {
-    console.log(`Posts for user with id ${userId}`);
+    this.postController.setUserId(userId);
   }
 }
