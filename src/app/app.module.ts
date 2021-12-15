@@ -8,6 +8,8 @@ import { PostComponent } from './components/post/post.component';
 import { FormatDatePipe } from './pipes/format-date.pipe';
 import { CommentComponent } from './components/comment/comment.component';
 import { CompactTextPipe } from './pipes/compact-text.pipe';
+import { PostPageComponent } from './components/post-page/post-page.component';
+import { IndexComponent } from './components/index/index.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { CompactTextPipe } from './pipes/compact-text.pipe';
     FormatDatePipe,
     CommentComponent,
     CompactTextPipe,
+    PostPageComponent,
+    IndexComponent,
   ],
   imports: [
     BrowserModule,
