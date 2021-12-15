@@ -4,21 +4,16 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "commented-on-post"
     "user-comment"
     "dates"
   ;
   padding: 8px;
 
-  .comment-on-post {
-    grid-area: commented-on-post;
-  }
-
   .user-comment {
     grid-area: user-comment;
     display: grid;
     gap: 8px;
-    grid-template-columns: 0.33fr 0.67fr;
+    grid-template-columns: 250px 1fr;
     grid-template-rows: auto;
     grid-template-areas:
       "comment-user comment-text"
