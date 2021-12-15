@@ -3,7 +3,9 @@
           <myblog-user
             [fullName]="u.full_name"
             [email]="u.email"
-            [picture]="u.picture">
+            [picture]="u.picture"
+            (click)="userClicked(u.id)"
+            >
           </myblog-user>
     </ng-container>
 </div>
