@@ -2,10 +2,11 @@
   <div class="post-title">
       {{ post.title }}
   </div>
-
+ {{ post.user.picture}}
   <myblog-user
     [fullName]="post.user.full_name"
-    [email]="post.user.email">
+    [email]="post.user.email"
+    [picture]="post.user.picture">
   </myblog-user>
 </div>
 
