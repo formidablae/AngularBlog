@@ -9,7 +9,7 @@ export class CrudService<T> {
 
   constructor() { }
 
-  getList$(params: {[key: string]: any}): Observable<T[]> {
+  getList$(params?: {[key: string]: any}): Observable<T[]> {
     return of(this.DATA);  // TODO: to correct
   }
 

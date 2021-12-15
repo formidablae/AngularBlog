@@ -1,2 +1,6 @@
-<myblog-post [post]="post" (commentsClicked)="commentsClicked($event)">
-</myblog-post>
+<ng-container *ngFor="let p of (posts$ | async)">
+    <myblog-post
+        [post]="p"
+        (commentsClicked)="commentsClicked($event)">
+    </myblog-post>
+</ng-container>
