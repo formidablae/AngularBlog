@@ -68,6 +68,31 @@ const DATA: IPost[] = [
       full_name: 'Fan Surfan'
     },
   },
+  {
+    id: 3,
+    title: 'Post 3',
+    text: 'Anog elit, sed do eiusmod tempor incididunt ut labother ' +
+      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
+      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
+      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
+      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
+      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
+      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
+      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
+      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
+      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
+      'coog elit, sed do eiusmod tempor incididunt ut labol post',
+    created_at: '2020-05-01',
+    updated_at: '2020-06-07',
+    comments_count: 0,
+    user: {
+      id: 13,
+      first_name: 'Fan',
+      last_name: 'Surfan',
+      email: 'fs11@mail.com',
+      full_name: 'Fan Surfan'
+    },
+  },
 ];
 
 @Injectable({

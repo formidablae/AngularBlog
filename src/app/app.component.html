@@ -5,3 +5,6 @@
         (commentsClicked)="commentsClicked($event)">
     </myblog-post>
 </ng-container>
+<div>
+    Sono presenti {{ numberOfArticles$ | async }} articoli di {{ numberOfUsers$ | async }} utenti.
+</div>
