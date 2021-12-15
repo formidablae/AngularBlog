@@ -7,6 +7,7 @@
     "post-title-container"
     "dates"
     "text"
+    "myblog-comment"
     "comments"
   ;
   padding: 8px;
@@ -58,7 +59,23 @@
 
   .comments {
     grid-area: comments;
-    color: gray;
-    text-align: right;
+    display: grid;
+    gap:8px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "comments-count"
+      "comment-list"
+    ;
+
+    .comments-count {
+      grid-area: comments-count;
+      color: gray;
+      text-align: right;
+    }
+
+    .myblog-comment {
+      grid-area: comment-list;
+    }
   }
 }

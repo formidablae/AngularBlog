@@ -24,5 +24,10 @@
 </div>
 
 <div class="comments">
-  <button class="link">{{ post.comments_count }} comment(s)</button>
+  <div class="comments-count">
+    <button class="link">{{ post.comments_count }} comment(s)</button>
+  </div>
+
+  <myblog-comment [comment]="comment">
+  </myblog-comment>
 </div>

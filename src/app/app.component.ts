@@ -31,20 +31,4 @@ export class AppComponent {
       full_name: 'User Suruser'
     },
   };
-  comment: IComment = {
-    id: 41,
-    text:
-      'this is a ' +
-      'cool comment',
-    created_at: '2021-11-21',
-    updated_at: '2021-11-22',
-    post_id: 1,
-    user: {
-      id: 10,
-      first_name: 'User',
-      last_name: 'Suruser',
-      email: 'us1@mail.com',
-      full_name: 'User Suruser'
-    },
-  };
 }

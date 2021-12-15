@@ -38,8 +38,5 @@ const DATA: IComment[] = [
   providedIn: 'root'
 })
 export class CommentService extends CrudService<IComment> {
-
-  getComments$(postId: number): Observable<IComment[]> {
-    return of(DATA.filter(comment => comment.post_id === postId));
-  }
+  override DATA = DATA;
 }

@@ -40,8 +40,5 @@ const DATA: IPost[] = [
   providedIn: 'root'
 })
 export class PostService extends CrudService<IPost> {
-
-  getPosts$(): Observable<IPost[]> {
-    return of(DATA);
-  }
+  override DATA = DATA;
 }
