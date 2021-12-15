@@ -20,7 +20,12 @@
 </div>
 
 <div class="text">
-  {{ post.text }}
+  <ng-container *ngIf="summary">
+    {{ post.text | compactText}}
+  </ng-container>
+  <ng-container *ngIf="!summary">
+    {{ post.text }}
+  </ng-container>
 </div>
 
 <div class="comments">

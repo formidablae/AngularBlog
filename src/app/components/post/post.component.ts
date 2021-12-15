@@ -11,6 +11,7 @@ import { IPost } from 'src/app/interfaces/post';
 export class PostComponent implements OnInit {
   @Input() post!: IPost;
   @Input() comments!: IComment[];
+  @Input() summary: boolean = false;
   @Output() commentsClicked = new EventEmitter<number>();  // wrapper of observable
 
   constructor() { }

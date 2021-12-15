@@ -5,8 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
 import { PostComponent } from './components/post/post.component';
-import { FormatDatePipe } from './pipes/formatDate.pipe';
+import { FormatDatePipe } from './pipes/format-date.pipe';
 import { CommentComponent } from './components/comment/comment.component';
+import { CompactTextPipe } from './pipes/compact-text.pipe';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { CommentComponent } from './components/comment/comment.component';
     PostComponent,
     FormatDatePipe,
     CommentComponent,
+    CompactTextPipe,
   ],
   imports: [
     BrowserModule,

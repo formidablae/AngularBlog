@@ -56,21 +56,6 @@ const DATA: IPost[] = [
       'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
       'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
       'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
-      'A cog elit, sed do eiusmod tempor incididunt ut labool pg elit,' +
       'coog elit, sed do eiusmod tempor incididunt ut labol post',
     created_at: '2020-05-01',
     updated_at: '2020-06-07',
