@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class CrudService<T> {
+export class CrudService<T extends { id:number }> {
   protected DATA!: T[];
 
   constructor() { }
@@ -14,7 +14,7 @@ export class CrudService<T> {
   }
 
   getItem$(id: number): Observable<T> {
-    return of(this.DATA[id]);  // TODO: to correct
+    return of(this.DATA.find(item => item.id === id) as T);  // TODO: to correct
   }
 
   deleteItem$(item: T): Observable<void> {

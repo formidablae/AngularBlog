@@ -29,4 +29,8 @@ export class PostControllerService {
   setUserId(userId: number) {
     this.user$.next(userId);
   }
+
+  getPost(id: number): Observable<IPost> {
+    return this.postService.getItem$(id);
+  }
 }
