@@ -13,7 +13,7 @@ export class AppComponent {
     id: 1,
     title: 'Post 1',
     text:
-      'g elit, sed do eiusmod tempor incididunt ut labo g' +
+      'hg elit, sed do eiusmod tempor incididunt ut labo g' +
       'elit, sed do eiusmod tempor incididunt ut labo g e' +
       'elit, sed do eiusmod tempor incididunt ut labo g e' +
       'elit, sed do eiusmod tempor incididunt ut labo g e' +
@@ -31,4 +31,8 @@ export class AppComponent {
       full_name: 'User Suruser'
     },
   };
+
+  commentsClicked(postId: number): void {
+    console.log(`Comments for post with id ${postId}`);
+  }
 }

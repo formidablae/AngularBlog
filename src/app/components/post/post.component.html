@@ -25,9 +25,9 @@
 
 <div class="comments">
   <div class="comments-count">
-    <button class="link">{{ post.comments_count }} comment(s)</button>
+    <button class="link" (click)="onCommentsClicked()">{{ post.comments_count }} comment(s)</button>
   </div>
 
-  <myblog-comment [comment]="comment">
-  </myblog-comment>
+ <!--  <myblog-comment [comment]="comment">
+  </myblog-comment> -->
 </div>
