@@ -8,5 +8,8 @@
     </myblog-post>
 </div>
 <div>
-    comments
+    <ng-container *ngFor="let c of (postComments$ | async)">
+        <myblog-comment [comment]="c">
+        </myblog-comment>
+    </ng-container>
 </div>

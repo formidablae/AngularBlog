@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, combineLatest, map, Observable, withLatestFrom } from 'rxjs';
+import { BehaviorSubject, combineLatest, map, Observable } from 'rxjs';
+import { IComment } from '../interfaces/comment';
 import { IPost } from '../interfaces/post';
 import { IUser } from '../interfaces/user';
+import { CommentService } from '../services/comment.service';
 import { PostService } from '../services/post.service';
 import { UserService } from '../services/user.service';
 
@@ -15,7 +17,8 @@ export class PostControllerService {
 
   constructor(
     private postService: PostService,
-    private userService: UserService
+    private userService: UserService,
+    private commentService: CommentService,
   ) {
     this.posts$ = combineLatest([
       this.postService.getList$(),
@@ -30,7 +33,13 @@ export class PostControllerService {
     this.user$.next(userId);
   }
 
-  getPost(id: number): Observable<IPost> {
-    return this.postService.getItem$(id);
+  getPost(postId: number): Observable<IPost> {
+    return this.postService.getItem$(postId);
+  }
+
+  getPostComments(postId: number): Observable<IComment[]> {
+    return this.commentService.getList$().pipe(
+      map(comments => comments.filter(comment => comment.post_id === postId))
+    );
   }
 }

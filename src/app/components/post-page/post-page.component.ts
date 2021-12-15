@@ -1,7 +1,8 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { PostControllerService } from 'src/app/controller/post.controller.service';
+import { IComment } from 'src/app/interfaces/comment';
 import { IPost } from 'src/app/interfaces/post';
 
 @Component({
@@ -12,6 +13,7 @@ import { IPost } from 'src/app/interfaces/post';
 })
 export class PostPageComponent implements OnInit {
   post$!: Observable<IPost>;
+  postComments$!: Observable<IComment[]>;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -19,6 +21,7 @@ export class PostPageComponent implements OnInit {
   ) {
     this.activatedRoute.params.subscribe(params => {
       this.post$ = this.postControllerService.getPost(+params['id']);
+      this.postComments$ = this.postControllerService.getPostComments(+params['id']);
     });
   }
 
