@@ -1,0 +1,12 @@
+<div>
+    <button class="link" [routerLink]="'/'">Go back</button>
+</div>
+<div>
+    <myblog-post
+        *ngIf="post$ | async as post"
+        [post]="post">
+    </myblog-post>
+</div>
+<div>
+    comments
+</div>
